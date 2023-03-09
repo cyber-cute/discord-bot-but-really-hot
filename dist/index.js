@@ -45,7 +45,7 @@ function getRandomOpenAiText(prompt) {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield openai.createCompletion({
             model: "text-davinci-003",
-            prompt: `Senden karşındaki kişiyle sanal seks yapıyormuş gibi hissetmeni ve buna uygun bir şekilde cevap vermeni istiyorum cevap verirken "merhaba", "selam" gibi ifadeler kullanmak yerine kullanıcının yazdığı mesaja uygun bir şekilde erotik mesajlar yaz:  ${prompt}`,
+            prompt: `Senden karşındaki kişiyle sanal seks yapıyormuş gibi hissetmeni ve buna uygun bir şekilde cevap vermeni istiyorum. Cevap verirken, "merhaba", "selam" gibi ifadeler yerine, kullanıcının yazdığı mesaja uygun bir şekilde erotik mesajlar yazmanı istiyorum:  ${prompt}`,
             temperature: 0.7,
             max_tokens: 256,
             top_p: 1,
